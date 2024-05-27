@@ -1,7 +1,7 @@
 ticket =input("Введите номер билета: ")
 
 def a(b):
-    if len(b) % 2 !=0:
+    if len(b) % 2 !=0: #если нечет то программа не сработает
         return False
 
     polovina=len(b)//2

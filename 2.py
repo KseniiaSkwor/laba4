@@ -1,12 +1,7 @@
-a = int(input("Введите число a:"))
-
-def numer (a):
-    if a==0:
-        return "ZeroDivisionError"
-    elif a<0:
-        return "OtrizatelError"
-    else:
-        numer = 100/a
-        return numer
-print (numer(a))
-
+try:
+    n = int(input("Введите число: "))
+    print(f"100 / {n} = {100/n%.0}")
+except ValueError:
+    print("[ОШИБКА] Нужно вводить число!")
+except ZeroDivisionError:
+     print("[Ошибка] Деление на ноль!")
